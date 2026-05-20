@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de CEP Profissional</title>
+    <!-- Conexão com o arquivo CSS separado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Buscador de CEP</h1>
+        <p class="subtitle">Consulte endereços em tempo real</p>
+        
+        <input type="text" id="inputCep" placeholder="Digite os 8 números do CEP" maxlength="8">
+        <button id="btnBuscar">Buscar Endereço</button>
+
+        <div id="areaResultado" class="resultado">
+            <div class="resultado-item">
+                <span class="label">Rua</span>
+                <span id="rua" class="valor">...</span>
+            </div>
+            <div class="resultado-item">
+                <span class="label">Bairro</span>
+                <span id="bairro" class="valor">...</span>
+            </div>
+            <div class="resultado-item">
+                <span class="label">Cidade</span>
+                <span id="cidade" class="valor">...</span>
+            </div>
+            <div class="resultado-item">
+                <span class="label">Estado</span>
+                <span id="estado" class="valor">...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conexão com o arquivo JavaScript separado -->
+    <script src="script.js"></script>
+</body>
+</html>

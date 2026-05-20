@@ -1,0 +1,109 @@
+/* Reset de margens e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo com efeito degradê moderno */
+body { 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+}
+
+/* Caixa principal branca (Card) */
+.card { 
+    background: white; 
+    padding: 35px; 
+    border-radius: 16px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
+    width: 100%; 
+    max-width: 420px; 
+}
+
+h1 { 
+    color: #2d3748; 
+    font-size: 24px; 
+    margin-bottom: 8px; 
+    text-align: center; 
+}
+
+p.subtitle { 
+    color: #718096; 
+    font-size: 14px; 
+    text-align: center; 
+    margin-bottom: 24px; 
+}
+
+/* Campo de entrada de texto */
+input { 
+    width: 100%; 
+    padding: 14px 16px; 
+    border-radius: 8px; 
+    border: 2px solid #e2e8f0; 
+    font-size: 16px; 
+    outline: none; 
+    margin-bottom: 20px;
+    transition: border-color 0.2s;
+}
+
+input:focus { 
+    border-color: #667eea; 
+}
+
+/* Botão de busca */
+button { 
+    width: 100%; 
+    padding: 14px; 
+    background-color: #667eea; 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.2s;
+}
+
+button:hover { 
+    background-color: #5a67d8; 
+}
+
+/* Bloco de resultados (inicia escondido) */
+.resultado { 
+    margin-top: 25px; 
+    background: #f7fafc; 
+    border-left: 4px solid #667eea; 
+    padding: 20px; 
+    border-radius: 8px; 
+    display: none; 
+}
+
+/* Linhas do resultado */
+.resultado-item { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 8px 0; 
+    border-bottom: 1px solid #edf2f7; 
+}
+
+.resultado-item:last-child { 
+    border-bottom: none; 
+}
+
+.label { 
+    color: #a0aec0; 
+    font-size: 13px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+
+.valor { 
+    color: #2d3748; 
+    font-size: 15px; 
+}
